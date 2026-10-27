@@ -1,0 +1,24 @@
+[project]
+name = "modelagem-computacional"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "theianreis", email = "ianreisdocs@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "matplotlib>=3.11.2",
+    "numpy>=2.5.4",
+    "pandas>=3.1.0",
+    "scipy>=1.18.1",
+    "seaborn>=0.13.2",
+    "simpy>=4.1.2",
+]
+
+[project.scripts]
+modelagem-computacional = "modelagem_computacional:main"
+
+[build-system]
+requires = ["uv_build>=0.13.1,<0.14.0"]
+build-backend = "uv_build"
